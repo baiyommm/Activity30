@@ -1,8 +1,19 @@
-//
-//  TextBox.cpp
-//  Activity30
-//
-//  Created by Chatchapong Thuaypha on 11/22/24.
-//
-
 #include "TextBox.hpp"
+
+using namespace std;
+
+namespace Functions {
+
+    TextBox::TextBox() : value("") {}
+
+    // Explicit constructor
+    TextBox::TextBox(const string& initialValue) : value(initialValue) {}
+
+    void TextBox::setValue(const std::string& newValue) {
+        value = newValue;
+    }
+
+    string TextBox::getValue() const {
+        return value;
+    }
+}
