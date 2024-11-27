@@ -14,7 +14,7 @@ namespace Functions {
         TextBox();
 
         // Explicit constructor
-        explicit TextBox(const std::string& initialValue);
+        explicit TextBox(const string& initialValue);
 
         // Setter
         void setValue(const string& newValue);
