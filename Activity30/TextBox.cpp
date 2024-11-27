@@ -9,7 +9,7 @@ namespace Functions {
     // Explicit constructor
     TextBox::TextBox(const string& initialValue) : value(initialValue) {}
 
-    void TextBox::setValue(const std::string& newValue) {
+    void TextBox::setValue(const string& newValue) {
         value = newValue;
     }
 
