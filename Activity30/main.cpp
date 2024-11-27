@@ -1,14 +1,19 @@
-//
-//  main.cpp
-//  Activity30
-//
-//  Created by Chatchapong Thuaypha on 11/20/24.
-//
-
 #include <iostream>
+#include "TextBox.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+using namespace Functions;
+
+int main() {
+
+    TextBox firstBox;
+    cout << "Default Value: " << firstBox.getValue() << endl;
+
+    firstBox.setValue("Default Constructor");
+    cout << "Updated value: " << firstBox.getValue() << endl;
+
+    TextBox secondBox("Explicit Constructor");
+    cout << "Explicit Value: " << secondBox.getValue() << endl;
+
     return 0;
 }
